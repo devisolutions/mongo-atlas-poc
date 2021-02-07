@@ -1,0 +1,4 @@
+com/myfirstmongodbproject/mongoatlas/MongoatlasApplication.class
+com/myfirstmongodbproject/mongoatlas/models/Candidate.class
+com/myfirstmongodbproject/mongoatlas/repository/CandidateRepository.class
+com/myfirstmongodbproject/mongoatlas/controller/CandidateController.class
