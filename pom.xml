@@ -11,7 +11,7 @@
 	<groupId>com.myfirstmongodbproject</groupId>
 	<artifactId>mongoatlas</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
+	<packaging>jar</packaging>
 	<name>mongoatlas</name>
 	<description>Spring Boot with mongo db</description>
 	<properties>
