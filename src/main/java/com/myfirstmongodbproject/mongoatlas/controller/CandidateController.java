@@ -15,20 +15,26 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping("/candidate")
+@RequestMapping
 public class CandidateController {
 
     @Autowired
     private CandidateRepository candidateRepository;
 
-    @PostMapping
+    @PostMapping("/candidate")
     @ResponseStatus(code = HttpStatus.CREATED)
     public Candidate add(@RequestBody Candidate candidate) {
         return candidateRepository.save(candidate);
     }
 
-    @GetMapping
+    @GetMapping("/candidate")
     public List<Candidate> get(@RequestParam("name") String name) {
+        System.out.println("Candidate Name : " + name);
         return candidateRepository.findByName(name);
+    }
+
+    @GetMapping("/hello")
+    public String test(@RequestParam("name") String name) {
+        return "Hello " + name;
     }
 }
